@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import injectSheet from 'react-jss'
-import {connect} from 'react-redux'
 import {styles} from './styles'
 
 class home extends Component {
@@ -18,9 +17,4 @@ class home extends Component {
   }
 }
 
-const mapStateToProps = () => ({})
-const mapDispatchToProps = () => ({})
-
-export const Home = injectSheet(styles)(
-  connect(mapStateToProps, mapDispatchToProps)(home)
-)
+export const Home = injectSheet(styles)(home)
